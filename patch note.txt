@@ -35,7 +35,7 @@ Bug Fixes:
 - Fixed Trigger Pull Data for polls incorrectly returning poll name for poll_id pull value instead of poll ID [Christina]
 - Fixed LioranBoard crashing after receiving Twitch deny/approve unban request trigger [Christina]
 - Fixed misbehaving text in the Init Variables window when Persistent Variables are off [wolbee]
-- Fixed a bug where a button wouldn't get pasted if it went off the grid - you will now be prompted whether you want LB to resize it and paste it anyway
+- Fixed a bug where a button wouldn't get pasted if it went off the grid - you will now be prompted whether you want LB to resize it and paste it anyway [Christina]
 
 
 2022.3.0 Community Edition (June 17th 2022)
