@@ -1,3 +1,43 @@
+2022.3.1 Community Edition (July 2nd 2022)
+
+Important Security Patch:
+- Disabled file saving/modification/deletion from folders outside of your main LB directory.
+  - The LB Dev team discovered that previous versions of LioranBoard 2 allowed any files on your computer to be modified even if they were outside of the main LB directory. This meant that previously, anyone could delete/modify your decks, or any important files on your PC with a single command. 
+
+New Features:
+- Added new Trigger Pull Data value outcome_amount for predictions (returns the amount of outcomes) [Christina]
+- Added two new Twitch Moderation Triggers: deny unban request, approve unban request [Christina] 
+
+Improvements:
+- Ctrl + Left/Right navigate properly in text boxes [Roadie]
+- Updated the alert system to allow for multi-line alerts, including from the Alert Message command [wolbee]
+- Delete Key now works when held [Roadie]
+- Spelling fixes [Roadie, wolbee & cyanidesugar]
+- New Transmitter V6.1 is available [Christina]:
+  - Fixed non-existent usernames when testing Twitch triggers 
+  - If you input custom username in Twitch Chat Message test trigger, it will automatically retrieve user ID to match it
+  - Added Twitch Poll, Prediction and Hype Train test triggers (thanks goes to Chrizzz for providing me with example Hype Train payloads)
+  - Added YouTube test triggers
+  - Changed favicon to our new CE butterfly [wolbee]
+  - Note: Twitch test triggers will ONLY work if you're using this new Transmitter with LB version 2022.3.1 or higher
+- Changed how YouTube retrieves access tokens, and patched a potential security issue to prevent any other programs from accessing it and potentially depleting the project quota [Christina]
+
+UI Changes:
+- none
+
+Bug Fixes:
+- Fixed high CPU usage bug [Roadie]
+- Fixed new extension install bug when using Transmitter V6.X [Christina]
+- Get Variable Type now returns "button" if given a button ID instead of a variable [Christina]
+- Using Ctrl-Z in a delay box no longer crashes the Receiver [Roadie]
+- Updater fixed to check latest and previous forks for most current and second most current release [Roadie]
+- Fixed the size of the Wait Until Variable Is command [wolbee]
+- Fixed Trigger Pull Data for polls incorrectly returning poll name for poll_id pull value instead of poll ID [Christina]
+- Fixed LioranBoard crashing after receiving Twitch deny/approve unban request trigger [Christina]
+- Fixed misbehaving text in the Init Variables window when Persistent Variables are off [wolbee]
+- Fixed a bug where a button wouldn't get pasted if it went off the grid - you will now be prompted whether you want LB to resize it and paste it anyway
+
+
 2022.3.0 Community Edition (June 17th 2022)
 
 New Features:
